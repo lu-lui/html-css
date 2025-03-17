@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos, ou simplesmente aumente/diminua o tamanho da tela</p>
+    <picture>
+       <source media="(max-width: 750px )" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagens dinamicas">
+<br>
+<h1>Reproduzindo áudios</h1>
+        <audio autoplay controls loop>
+            <!--Sempre botar de cima pra baixo a ordem para o navegador tentar reproduzir os audios (mp3, ogg, wav)-->
+            <source src="midia/4-de-julio.mp3" type="audio/mpeg">
+            <source src="midia/4-de-julio.ogg" type="audio/ogg">
+            <source src="midia/4-de-julio.wav" type="audio/wav">
+            <p>Infelizmente seu navegdor não consegue reproduzir áudio, <a href="midia/4-de-julio.mp3">clique aqui</a> para baixar o arquivo MP3</p>
+        </audio>
+    </picture>
+</body>
+</html>
