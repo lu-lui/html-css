@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 95vh;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum harum nulla autem in odit ea, repellat facilis distinctio aut tenetur enim minima voluptate cum porro dicta consequuntur quis nesciunt voluptatibus?</p>
+    <ul>
+        <li><a href="paginas-extras/teste.html" target="frame">1° página</a></li>
+        <li><a href="paginas-extras/teste2.html"target="frame">2° página</a></li>
+        <li><a href="paginas-extras/teste3.html" target="frame">3° página</a></li> 
+    </ul>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, alias maiores. Nihil, itaque laborum minus, impedit optio unde nobis, rem temporibus nostrum voluptatem commodi harum nemo nisi perferendis? Assumenda, ratione? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga accusantium nostrum maxime nulla sapiente quisquam corporis! Laborum iusto aut, id, deserunt sint doloremque quisquam labore molestias quas maiores cumque consectetur.</p>
+
+<iframe srcdoc="<h1>Tumb do iframe</h1> 
+    <p>HTML simples dentro de uma tag srcdoc, se precisar de algo mais elaborado, fazer um novo documento!</p> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur iste harum eligendi placeat iusto expedita! Repellendus, quidem vel? Deleniti, mollitia magni. Tempora, debitis in libero quas exercitationem rerum ullam.</p>
+    <img src='imagem/html.png' alt='imagem html' width='100px'>
+" name="frame">
+    <p>Infelizmente seu navegador não é compatível.</p>
+
+</iframe>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, alias maiores. Nihil, itaque laborum minus, impedit optio unde nobis, rem temporibus nostrum voluptatem commodi harum nemo nisi perferendis? Assumenda, ratione? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga accusantium nostrum maxime nulla sapiente quisquam corporis! Laborum iusto aut, id, deserunt sint doloremque quisquam labore molestias quas maiores cumque consectetur.</p>
+</body>
+</html>
