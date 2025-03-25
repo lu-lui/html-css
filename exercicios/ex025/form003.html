@@ -8,26 +8,40 @@
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" required>
-        </p>
-        <p>
-            <label for="imes">Período Letivo</label>
-            <input type="month" name="mes" id="imes">
-        </p>
-        <p>
-            <label for="idata">Dia da Prova:</label>
-            <input type="date" name="data" id="idata">
-        </p>
-        <p>
-            <label for="ihora">Hora da prova:</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail" required>Email:</label>
+                <input type="email" name="email" id="iemai" placeholder="exemplo@gmail.com">
+            </p>
+            <p>
+               <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx) xxxxx-xxxx">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Dados da Matéria</legend>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" required>
+            </p>
+            <p>
+                <label for="imes">Período Letivo</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+            <p>
+                <label for="idata">Dia da Prova:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="ihora">Hora da prova:</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
