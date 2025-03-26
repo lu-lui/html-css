@@ -15,6 +15,11 @@
                 <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
             </p>
             <p>
+            Sexo:
+            <input type="radio" name="sx" id="isxmas"><label for="isxmas">Masculino</label>
+            <input type="radio" name="sx" id="isxfem"><label for="isxfem">Feminino</label>
+            </p>
+            <p>
                 <label for="iemail" required>Email:</label>
                 <input type="email" name="email" id="iemai" placeholder="exemplo@gmail.com">
             </p>
@@ -41,6 +46,13 @@
                 <label for="ihora">Hora da prova:</label>
                 <input type="time" name="hora" id="ihora">
             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol">Voleibol</label><br>
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">

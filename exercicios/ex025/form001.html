@@ -7,11 +7,90 @@
 </head>
 <body>
    <form action="cadastro.php" autocomplete="off" method="post">
-    <h1>Formulário Básico</h1>
-    <p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"></p>
-    <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
-    <p><input type="submit" value="Enviar"></p>
-
+    <h1>Formulário</h1>
+    <p>
+        <label for="inome">Nome: </label><input type="text" name="nome" id="inome">
+    </p>
+    <p>
+        <label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome">
+    </p>
+    <p>
+        <label for="iest">Estado:</label>
+        <select name="est" id="iest">
+            <option value="" selected>--Escolha--</option>
+        
+            <optgroup label="Norte">
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="PA">Pará</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="TO">Tocantins</option>
+            </optgroup>
+        
+            <optgroup label="Nordeste">
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="PB">Paraíba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="SE">Sergipe</option>
+            </optgroup>
+        
+            <optgroup label="Centro-Oeste">
+                <option value="DF">Distrito Federal</option>
+                <option value="GO">Goiás</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+            </optgroup>
+        
+            <optgroup label="Sudeste">
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+        
+            <optgroup label="Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+        </select>        
+    </p>
+    <p>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option>Cabeleireira</option>
+            <option>Motorista</option>
+            <option>Agrônomo</option>
+        </datalist>
+    </p>
+    <p>
+        <label for="icor">Cor favorita:</label>
+        <input type="color" name="cor" id="icor" value="#ff0000">
+    </p>
+    <p>
+        <label for="inivel">Nível de Satisfação:</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="10" value="9">
+    </p>
+    <p>
+       <label for="ifoto">Foto de perfil:</label>
+        <input type="file" name="foto" id="ifoto" required>
+    </p>
+    <p>
+        <label for="imen">Mensagem:</label><br>
+        <textarea name="men" id="imen" cols="30" rows="5" placeholder="Sua mensagem aqui"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
    </form> 
+
 </body>
 </html>
