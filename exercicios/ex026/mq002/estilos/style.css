@@ -12,10 +12,11 @@ html, body {
     background-color: #233eff;
     background-size: contain;
     background-repeat: no-repeat;
-}
+    }
 
 h1 {
     padding: 10px;
     color: white;
     text-shadow: 2px 2px 0px #1526a7;
+    text-align: center;
 }
