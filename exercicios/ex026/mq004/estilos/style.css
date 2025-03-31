@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root {
+    --cor-1: #9265A6;
+    --cor-2: #C1A9D9;
+    --cor-3: #B784D9;
+    --cor-4: #365902;
+    --cor-5: #618C03;
+  }
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor-2);
+}
+
+header {
+    background-color: var(--cor-3);
+}
+
+article {
+    background-color: white;
+    text-align: justify;
+    padding: 10px;
+    text-indent: 30px;
+}
+
+section {
+    background-color: black;
+    color: var(--cor-5);
+    width: 230px;
+    padding: 10px;
+    margin: auto;
+    text-indent: 0px;
+}

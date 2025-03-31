@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Menu Responsivo</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <menu>
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Media Queries</h2>
+            <p>Media Queries são uma funcionalidade do CSS que permitem a criação de layouts responsivos, ou seja, que se adaptam a diferentes tamanhos de tela e dispositivos. Elas funcionam aplicando estilos específicos com base em características do dispositivo, como largura, altura, orientação e resolução da tela. Isso é essencial para garantir uma boa experiência do usuário, independentemente de ele estar acessando o site por um computador, tablet ou smartphone.</p>
+
+<p>Para utilizar Media Queries, a regra básica é definir um conjunto de estilos dentro de um bloco @media que será ativado apenas quando as condições especificadas forem atendidas. Por exemplo, para aplicar estilos especiais quando a tela tiver no máximo 768 pixels de largura, usa-se:</p>
+
+<section>
+    <code>
+        @media (max-width: 768px) { <br>
+          body { <br>
+            background-color: lightgray; <br>
+          } <br>
+        }
+    </code>
+</section>
+<p>Além de largura e altura, é possível utilizar Media Queries para verificar a orientação da tela (orientation: portrait ou orientation: landscape), a densidade de pixels (min-resolution) e até preferências do usuário, como o modo escuro (prefers-color-scheme: dark). Combinando essas regras, os desenvolvedores podem criar layouts flexíveis e acessíveis para diferentes contextos.</p>
+        </article>
+    </main>
+</body>
+</html>
