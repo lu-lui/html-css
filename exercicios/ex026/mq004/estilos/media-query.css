@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Outras mídias*/
+
+@media screen and (min-width: 786px) {
+    
+  header span#b-menu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768;
+    }
+}
