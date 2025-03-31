@@ -15,24 +15,84 @@
 
 body {
     background-color: var(--cor-2);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     background-color: var(--cor-3);
 }
 
-article {
-    background-color: white;
-    text-align: justify;
+#b-menu {
+    background-image: linear-gradient(to top, var(--cor-1), var(--cor-3));
+    display: block;
+    text-align: center;
     padding: 10px;
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor-1);
+    color: white;
+    border-top: 2px solid var(--cor-2);
+}
+
+menu a:hover {
+    background-color: var(--cor-2);
+    font-weight: bold;
+}
+
+
+
+main {
+    width: 90vw;
+    margin:auto;
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article{
     text-indent: 30px;
+    text-align: justify;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 0px;
+}
+
+article span {
+    color: var(--cor-5);
+    font-weight: bold;
 }
 
 section {
     background-color: black;
     color: var(--cor-5);
     width: 230px;
-    padding: 10px;
+    padding: 15px;
     margin: auto;
     text-indent: 0px;
 }
