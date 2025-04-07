@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+<style>
+.container {
+    background-color: mediumpurple;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item {
+    background-color: aliceblue;
+    border: 1px solid lightskyblue;
+    text-align: center;
+    padding: 10px;
+    flex-basis: 200px;
+}
+
+#a {
+    flex-shrink: 4;
+    flex-grow: 0;
+}
+
+#b {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+#c {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#a1 {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#b1 {
+    flex-shrink: 0;
+    flex-grow: 2;
+}
+
+#c1 {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#a2 {
+    flex-shrink: 1;
+    flex-grow: 3;
+}
+
+#b2 {
+    flex-shrink: 3;
+    flex-grow: 0;
+}
+
+#c2 {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#a3 {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#b3 {
+    flex-shrink: 0;
+    flex-grow: 2;
+}
+
+#c3 {
+    flex-shrink: 2;
+    flex-grow: 1;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+    </div> <br>
+    <div class="container">
+        <div class="item" id="a1">A</div>
+        <div class="item" id="b1">B</div>
+        <div class="item" id="c1">C</div>
+    </div> <br>
+    <div class="container">
+        <div class="item" id="a2">A</div>
+        <div class="item" id="b2">B</div>
+        <div class="item" id="c2">C</div>
+    </div> <br>
+    <div class="container">
+        <div class="item" id="a3">A</div>
+        <div class="item" id="b3">B</div>
+        <div class="item" id="c3">C</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+<style>
+.container {
+    background-color: mediumpurple;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item {
+    background-color: aliceblue;
+    border: 1px solid lightskyblue;
+    text-align: center;
+    padding: 10px;
+}
+
+#a {
+    
+    flex: 0 4 150px;
+    /*ordem: grow, shrink e basis*/
+}
+
+#b {
+    flex: 1 0 150px;
+}
+
+#c {
+    flex: 0 1 150px;
+}
+
+#a1 {
+    flex: 1 1 150px;
+}
+
+#b1 {
+    flex: 2 0 150px;
+}
+
+#c1 {
+    flex: 0 1 150px;
+}
+
+#a2 {
+    flex: 3 1 150px;
+}
+
+#b2 {
+    flex: 0 3 150px;
+}
+
+#c2 {
+    flex: 1 1 150px;
+}
+
+#a3 {
+    flex: 0 1 150px;
+}
+
+#b3 {
+    flex-shrink: 0;
+    flex-grow: 2;
+    flex: 2 0 150px;
+}
+
+#c3 {
+    flex: 1 2 150px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+    </div> <br>
+    <div class="container">
+        <div class="item" id="a1">A</div>
+        <div class="item" id="b1">B</div>
+        <div class="item" id="c1">C</div>
+    </div> <br>
+    <div class="container">
+        <div class="item" id="a2">A</div>
+        <div class="item" id="b2">B</div>
+        <div class="item" id="c2">C</div>
+    </div> <br>
+    <div class="container">
+        <div class="item" id="a3">A</div>
+        <div class="item" id="b3">B</div>
+        <div class="item" id="c3">C</div>
+    </div>
+
+    <p>Exercício 10 com as tags: basis+grow+schrink simplificadas para flex</p>
+</body>
+</html>
