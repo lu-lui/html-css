@@ -36,7 +36,7 @@ section.flex {
     padding: 20px;
     background-color: rgb(204, 204, 204);
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap; 
 }
 
 article.text-media {
